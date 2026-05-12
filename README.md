@@ -70,12 +70,92 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 ## Program
 
 ### Developed By:
-**Name:** ____________________________  
+**Name:** KAVYA T 
+**Register No:**2305003004
+  ### Ex. No. 02
 
-### Register No:
-____________________________  
+#### 1. import libraries.
+```python
+import cv2
+import matplotlib.pyplot as plt
 
----
+```
+#### 2. Read grayscale image.
+```python
+Gray_image = cv2.imread("WhatsApp Image 2026-05-12 at 14.16.29.jpeg", 0)
+
+```
+#### 3. Display Gray Scale Image.
+```python
+plt.figure(figsize=(6,6))
+plt.imshow(Gray_image, cmap='gray')
+plt.title("Gray Scale Image")
+plt.axis("off")
+plt.show()
+
+```
+#### 4. # Read color image.
+```python
+Color_image = cv2.imread("WhatsApp Image 2026-05-12 at 14.32.43.jpeg")
+
+```
+#### 5.# Convert BGR to RGB.
+```python
+Color_rgb = cv2.cvtColor(Color_image, cv2.COLOR_BGR2RGB)
+
+```
+#### 6.Display Color Image.
+```python
+plt.figure(figsize=(6,6))
+plt.imshow(Color_rgb)
+plt.title("Color Image")
+plt.axis("off")
+plt.show()
+
+```
+#### 7.Histogram of Gray Scale Image.
+```python
+hist_gray = cv2.calcHist([Gray_image], [0], None, [256], [0,256])
+
+plt.figure(figsize=(8,5))
+plt.title("Histogram of Gray Scale Image")
+plt.xlabel("Pixel Intensity")
+plt.ylabel("Pixel Count")
+plt.plot(hist_gray, color='black')
+plt.xlim([0,256])
+plt.show()
+
+```
+#### 8.Histogram of Blue Channel.
+```python
+hist_blue = cv2.calcHist([Color_image], [0], None, [256], [0,256])
+
+plt.figure(figsize=(8,5))
+plt.title("Histogram of Blue Channel")
+plt.xlabel("Pixel Intensity")
+plt.ylabel("Pixel Count")
+plt.plot(hist_blue, color='blue')
+plt.xlim([0,256])
+plt.show()
+
+```
+#### 9.# Histogram Equalization.
+```python
+equalized = cv2.equalizeHist(Gray_image)
+```
+#### 10.Histogram of Equalized Image
+```python
+hist_equalized = cv2.calcHist([equalized], [0], None, [256], [0,256])
+
+plt.figure(figsize=(8,5))
+plt.title("Histogram of Equalized Image")
+plt.xlabel("Pixel Intensity")
+plt.ylabel("Pixel Count")
+plt.plot(hist_equalized, color='green')
+plt.xlim([0,256])
+plt.show()
+```
+
 
 ##  Output
 
