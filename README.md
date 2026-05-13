@@ -94,12 +94,12 @@ plt.axis("off")
 plt.show()
 
 ```
-#### 4. # Read color image.
+#### 4. Read color image.
 ```python
 Color_image = cv2.imread("WhatsApp Image 2026-05-12 at 14.32.43.jpeg")
 
 ```
-#### 5.# Convert BGR to RGB.
+#### 5.Convert BGR to RGB.
 ```python
 Color_rgb = cv2.cvtColor(Color_image, cv2.COLOR_BGR2RGB)
 
@@ -139,7 +139,7 @@ plt.xlim([0,256])
 plt.show()
 
 ```
-#### 9.# Histogram Equalization.
+#### 9.Histogram Equalization.
 ```python
 equalized = cv2.equalizeHist(Gray_image)
 ```
@@ -161,19 +161,30 @@ plt.show()
 
 ### Grayscale Histogram Equalization
 
-- Original grayscale image is displayed  
-- Histogram of original grayscale image is plotted  
-- Enhanced image after histogram equalization is displayed  
-- Histogram of enhanced grayscale image shows improved contrast  
+- Original grayscale image is displayed
+<img width="523" height="364" alt="image" src="https://github.com/user-attachments/assets/6c14ebd8-9515-4c26-bc64-3e23db945c1b" />
+- Histogram of original grayscale image is plotted
+<img width="597" height="389" alt="image" src="https://github.com/user-attachments/assets/cb50a1ad-e60b-41b6-9289-3bec4d6247ba" />
+ 
 
 ### Color Image Histogram Equalization
 
-- Original color image is displayed  
-- Histogram of B, G, R channels is plotted  
-- Enhanced image after HSV-based equalization is displayed  
-- Histogram of enhanced image shows better intensity distribution  
+- Original color image is displayed
+<img width="502" height="360" alt="image" src="https://github.com/user-attachments/assets/f954f34a-3469-4817-910e-39bc20891d51" />
 
----
+- Histogram of B, G, R channels is plotted
+<img width="608" height="388" alt="image" src="https://github.com/user-attachments/assets/c37cf6b3-a9e5-4851-ac7e-dd615a414c0b" />
+  
+
+### Equalization Image 
+
+- Display Equalized Image
+<img width="506" height="363" alt="image" src="https://github.com/user-attachments/assets/2185f423-6d7e-4daf-b52b-db97119c6fbc" />
+
+- Histogram of Equalized Image
+<img width="593" height="406" alt="image" src="https://github.com/user-attachments/assets/6935317c-529e-41c9-9ff2-c92029864f86" />
+
+
 
 ## Result
 
