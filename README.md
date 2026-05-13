@@ -163,6 +163,7 @@ plt.show()
 
 - Original grayscale image is displayed
 <img width="523" height="364" alt="image" src="https://github.com/user-attachments/assets/6c14ebd8-9515-4c26-bc64-3e23db945c1b" />
+
 - Histogram of original grayscale image is plotted
 <img width="597" height="389" alt="image" src="https://github.com/user-attachments/assets/cb50a1ad-e60b-41b6-9289-3bec4d6247ba" />
  
