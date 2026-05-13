@@ -71,7 +71,7 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 
 ### Developed By:
 **Name:** KAVYA T 
-**Register No:**2305003004
+**Register No:** 2305003004
   ### Ex. No. 02
 
 #### 1. import libraries.
